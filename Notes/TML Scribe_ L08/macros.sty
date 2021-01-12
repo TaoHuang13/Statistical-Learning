@@ -1,0 +1,46 @@
+\RequirePackage[english]{babel}
+\RequirePackage{algorithm}
+\RequirePackage[noend]{algpseudocode}
+\RequirePackage{natbib}
+\RequirePackage{fullpage}
+\RequirePackage{graphicx}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{fancyvrb}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{hyperref}
+\RequirePackage{optidef}
+\RequirePackage{parskip}
+
+\newcommand*{\expect}{\mathsf{E}}
+\newcommand*{\prob}{\mathsf{P}}
+
+\newcommand{\outline}[1]{
+    \textbf{Outline} \textit{
+        #1
+        \bigskip
+    }
+}
+
+\newcommand{\scribedby}[1]{
+    \def\scribedbyVal{#1}
+}
+
+\newcommand{\lecturedate}[1]{
+     \def\lecturedateVal{#1}
+}
+
+\newcommand{\assignment}[1]{
+    \def\assignmentVal{#1}
+}
+
+\makeatletter
+\def\@maketitle{
+    \textbf{Statistical Learning}\hfill\textbf{\scribedbyVal}\\[0.01in]
+    \textbf{School of Information Science and Technology}\hfill\textbf{\assignmentVal}\\[0.01in]
+    \textbf{}\hfill\textbf{\lecturedateVal}\\
+    \smallskip\hrule\bigskip
+}
+\makeatother
+
